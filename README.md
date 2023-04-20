@@ -1,3 +1,11 @@
+# Quotes4u App
+
+Demo: https://dailyquotes4u.netlify.app
+
+# screenshot
+
+![image](https://user-images.githubusercontent.com/63857410/233289531-ae82f7a2-845d-43a4-8a35-b0bf37a620b5.jpg)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
