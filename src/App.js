@@ -10,10 +10,16 @@ function App() {
     setNumber(Math.floor(Math.random() * data.quotes.length))
   },[])
 
+  const shuffle = () => {
+    setNumber(Math.floor(Math.random() * data.quotes.length))
+  }
+
   return (
     <div className="App">
       <div>
-        {number && data.quotes[number].quote}
+        <div className='quote' onClick={() => shuffle()}>
+          {number && data.quotes[number].quote}
+        </div>
         <div className='author'>
           - {number && data.quotes[number].author ? data.quotes[number].author : 'Unknown'}
         </div>
