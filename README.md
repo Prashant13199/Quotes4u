@@ -4,6 +4,8 @@ Demo: https://dailyquotes4u.netlify.app
 
 # screenshot
 
+![B9090E7E-F19E-48EA-9B4F-4B4836864A2B_1_201_a](https://user-images.githubusercontent.com/63857410/233426675-4ee4ee93-d7f2-46d9-a6f7-c8eac790dadf.jpeg)
+
 ![image](https://user-images.githubusercontent.com/63857410/233289531-ae82f7a2-845d-43a4-8a35-b0bf37a620b5.jpg)
 
 # Getting Started with Create React App
