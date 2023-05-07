@@ -1,7 +1,6 @@
-.App { 
-  justify-content: center;
-  align-items: center;
-  display: flex;
+.App {
+  display: grid;
+  place-items: center;
   height: 100vh;
   width: 80vw;
   margin: auto;
@@ -13,10 +12,18 @@
   justify-content: flex-end;
   align-items: flex-end;
   display: flex;
-  font-weight: bold;
   margin-top: 20px;
+  font-size: 24px;
+  color: gray;
 }
 
 .quote {
   cursor: pointer;
+  transition: all .5s;
+  opacity: 1;
+}
+
+.show {
+  opacity: 0;
+  transition: all .5s;
 }

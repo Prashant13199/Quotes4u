@@ -7,21 +7,32 @@ function App() {
   const [number, setNumber] = useState("")
 
   useEffect(() => {
-    setNumber(Math.floor(Math.random() * data.quotes.length))
-  },[])
+
+    shuffle()
+  }, [])
 
   const shuffle = () => {
-    setNumber(Math.floor(Math.random() * data.quotes.length))
+    const ele = document.querySelectorAll('.animate')
+    if (ele) {
+      ele[0].classList.add('show');
+      ele[1].classList.add('show');
+    }
+    setTimeout(() => {
+      ele[0].classList.remove('show');
+      ele[1].classList.remove('show');
+      setNumber(Math.floor(Math.random() * data.quotes.length))
+    }, 500);
+
   }
 
   return (
     <div className="App">
       <div>
-        <div className='quote' onClick={() => shuffle()}>
+        <div className='quote animate' onClick={() => shuffle()}>
           {number && data.quotes[number].quote}
         </div>
-        <div className='author'>
-          - {number && data.quotes[number].author ? data.quotes[number].author : 'Unknown'}
+        <div className='author animate'>
+          {number && data.quotes[number].author ? data.quotes[number].author : 'Unknown'}
         </div>
       </div>
     </div>
