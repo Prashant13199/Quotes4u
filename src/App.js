@@ -1,13 +1,14 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useContext } from 'react';
 import './App.css';
 import data from './quotes.json'
+import { ColorModeContext } from './Services/ThemeContext';
 
 function App() {
 
   const [number, setNumber] = useState("")
+  const { mode } = useContext(ColorModeContext)
 
   useEffect(() => {
-
     shuffle()
   }, [])
 
@@ -26,13 +27,15 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <div>
-        <div className='quote animate' onClick={() => shuffle()}>
-          {number && data.quotes[number].quote}
-        </div>
-        <div className='author animate'>
-          {number && data.quotes[number].author ? data.quotes[number].author : 'Unknown'}
+    <div className={mode === 'light' ? 'BodyApp' : 'BodyAppDark'}>
+      <div className="App">
+        <div>
+          <div className={mode === 'light' ? 'quote animate' : 'quoteDark animate'} onClick={() => shuffle()}>
+            {number && data.quotes[number].quote}
+          </div>
+          <div className='author animate'>
+            {number && data.quotes[number].author ? data.quotes[number].author : 'Unknown'}
+          </div>
         </div>
       </div>
     </div>
