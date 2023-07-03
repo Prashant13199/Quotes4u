@@ -20,10 +20,11 @@ function App() {
     }
     setTimeout(() => {
       ele[0].classList.remove('show');
-      ele[1].classList.remove('show');
+      setTimeout(() => {
+        ele[1].classList.remove('show');
+      }, 700);
       setNumber(Math.floor(Math.random() * data.quotes.length))
     }, 500);
-
   }
 
   return (
