@@ -22,7 +22,7 @@ function App() {
       ele[0].classList.remove('show');
       setTimeout(() => {
         ele[1].classList.remove('show');
-      }, 700);
+      }, 800);
       setNumber(Math.floor(Math.random() * data.quotes.length))
     }, 500);
   }

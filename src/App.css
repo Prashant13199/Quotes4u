@@ -12,25 +12,25 @@
   margin-top: 20px;
   font-size: 24px;
   color: gray;
-  transition: all .5s;
+  transition: all .5s ease-in-out;
 }
 
 .quote {
   cursor: pointer;
-  transition: all .5s;
+  transition: all .5s ease-in-out;
   opacity: 1;
 }
 
 .quoteDark {
   cursor: pointer;
-  transition: all .5s;
+  transition: all .5s ease-in-out;
   opacity: 1;
   color: white;
 }
 
 .show {
   opacity: 0;
-  transition: all .5s;
+  transition: all .5s ease-in-out;
 }
 
 .BodyApp {
